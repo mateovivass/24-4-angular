@@ -1,0 +1,26 @@
+<div class="container">
+  <app-otra-carpeta class="componenteTabla"></app-otra-carpeta>
+
+  <h2>Data binding</h2>
+  <h3>hola, mi nombre es Mateo</h3>
+  <h3>hola, mi nombre es {{nombre}} </h3>
+  <h3>la suma de 1000 + 50, el resultado es: {{Suma(1000,250)}} </h3>
+  <br><br>
+  <h2>Propety Binding</h2>
+  <input type="text" class="form-control" [placeholder]='textoPlaceHolder' [disabled]='disabledInput'>
+  <br><br>
+  <img src="assets/img/astronauta.png" width="350" height="350">
+  <br><br>
+  <h2>Event Binding</h2>
+  <h3>{{textoEventBinding}}</h3>
+  <button class="btn btn-primary" (click)="cambiarTexto()">Click Me</button>
+  <br><br>
+  <input type="text" clase="form-control" placeholder="Escribir algo aquí" [(ngModel)]="textoTwoDataBinding">
+  <br>
+  texto replicado:
+  <i>{{textoTwoDataBinding}}</i>
+
+
+
+
+</div>
